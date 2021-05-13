@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const MovieListItem = (props)=> {
   const { id, title, director, genre, metascore} = props.movie;
-
   return(<tr key={id}>
       <td>{title}</td>
       <td>{director}</td>
