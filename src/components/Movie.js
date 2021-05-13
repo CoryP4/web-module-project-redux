@@ -11,8 +11,8 @@ const Movie = (props) => {
     const movie = movies.find(movie=>movie.id===Number(id));
     
     const handleClick = () => {
+        push('/movies/');
         props.deleteMovie(movie.id);
-        push('/movies');
     }
 
     return(<div className="modal-page col">

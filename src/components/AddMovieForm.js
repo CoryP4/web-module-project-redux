@@ -25,8 +25,8 @@ const AddMovieForm = (props) => {
     }
 
     const handleSubmit = () => {
-        props.addMovie(movie);
         push('/movies/');
+        props.addMovie(movie);
     }
     
 
