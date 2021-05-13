@@ -50,11 +50,11 @@ In this project, you take a fairly complex application used to search a movie da
 
 * [x] **Find the HTML element that should trigger a deletion in the movie component.** Create and connect the necessary event handlers to call deleteMovie on the current movie's id AND redirect the user using push('/movies').
 
-* [ ] Add in an ADD_MOVIE case to the movieReducer.js.
-* [ ] Make this new case return all state with a new movie added to the movies array.
-* [ ] Create an action creator for addMovie in movieActions.js.
-* [ ] Find the component that triggers the adding of a movie and connect the addMovie action.
-* [ ] Create and connect the necessary event handlers to call addMovie, passing in user created movie values. Add in push('/movies/) after adding addMovie to trigger a redirect.
+* [x] Add in an ADD_MOVIE case to the movieReducer.js.
+* [x] Make this new case return all state with a new movie added to the movies array.
+* [x] Create an action creator for addMovie in movieActions.js.
+* [x] Find the component that triggers the adding of a movie and connect the addMovie action.
+* [x] Create and connect the necessary event handlers to call addMovie, passing in user created movie values. Add in push('/movies/) after adding addMovie to trigger a redirect.
 
 #### Build out the favorites reducer
 > *Alright! Now that the movie reducer is complete, you have the chance to build a reducer from scratch to handle favorite movie functionality. We will also work on combining reducers.*

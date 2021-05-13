@@ -11,7 +11,7 @@ const Movie = (props) => {
     const movie = movies.find(movie=>movie.id===Number(id));
     
     const handleClick = () => {
-        deleteMovie(movies.id);
+        props.deleteMovie(movie.id);
         push('/movies');
     }
 
@@ -60,4 +60,4 @@ const mapStateToProps = (state) => {
     })
 }
 
-export default connect(mapStateToProps, { deleteMovie })(Movie);
+export default connect(mapStateToProps, {deleteMovie})(Movie);

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import { Link, useHistory } from 'react-router-dom';
 
+
 const AddMovieForm = (props) => {
     const { push } = useHistory();
 
@@ -20,10 +21,15 @@ const AddMovieForm = (props) => {
             ...movie,
             [e.target.name]: e.target.value
         });
+        console.log(movie)
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = () => {
+        props.addMovie(movie);
+        push('/movies/');
     }
+    
+
 
     const { title, director, genre, metascore, description } = movie;
     return(<div className="col">
@@ -67,4 +73,4 @@ const AddMovieForm = (props) => {
     </div>);
 }
 
-export default AddMovieForm;
+export default connect(null, {addMovie})(AddMovieForm);
